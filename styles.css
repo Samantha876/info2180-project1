@@ -8,4 +8,144 @@ body {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, "Noto Sans", sans-serif;
+/*
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 160px 160px 160px 160px 160px 50px;
+    gap: 10px;*/
 }
+body{
+    display:grid;
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-rows: 80px 160px 160px 160px 160px 160px 160px;
+    gap: 10px;
+    /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, "Noto Sans", sans-serif;*/
+}
+.header{
+    grid-column: span 7;
+    /*grid-row:1;*/
+    background-color: white;
+    font-size: 18px;
+}
+.overview-hero{
+    grid-row: 2/3;
+    /*grid-column: span 7;*/
+    text-align: right;
+    justify-content: center;
+}
+.learn-about{
+    grid-row:3;
+    /*grid-column: span 7;*/
+}
+.testing{
+    grid-row: 4;
+    /*grid-column: span 7;*/
+}
+
+.stories{
+    grid-row:5;
+    /*grid-column: 1/7;*/
+}
+
+.newsletter{
+    grid-row: 6;
+    /*grid-column: span 7;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    text-align: center;*/
+    justify-content: center;
+    background-color: #48BB78;
+    color: white;
+}
+
+.newsletter .form-group{
+    float:left;
+}
+
+.newsletter .btn{
+    float:right;
+    background-color: #5A67D8;
+}
+
+
+footer{
+    grid-row:9;
+    /*grid-column: span 7;*/
+    background-color: #4A5568;
+    color:white;
+}
+
+.cards{
+    display:grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header{
+    display:flex;
+}
+
+header h1{
+   text-align: left;
+}
+
+header ul{
+    list-style-type:none;
+    text-align: right;
+}
+
+header li{
+    display: inline;
+    color: #6b7280;
+}
+
+.overview-hero-image img{
+    float: left;
+    margin: 0 1.5%;
+    height:100px;
+}
+
+.cta .btn{
+    float: right;
+}
+
+.testing-description{
+    text-align: left;
+}
+
+.stories img{
+    float: left;
+    max-height:100px;
+    width:100px;
+    border-radius: 50%;
+}
+
+.learn-about h2{
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.learn-about{
+
+}
+
+.learn-about h3{
+    color: #48BB78;
+    font-size: 21px;
+}
+
+.testing{
+    background-color: #4A5568;
+    color:white;
+} 
+
+.testing .cta{
+    background-color: #48BB78;
+    border-radius: 5px;
+}
+
+
+
+
