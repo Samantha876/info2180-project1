@@ -1,12 +1,18 @@
-const form=document.getElementsByClassName("form-group");
+window.onload=function(){
+    const button= document.querySelector("button");
 
-form.addEventListener("submit",(e)=>{
+    button.addEventListener("click",(e)=>{
     e.preventDefault();
-    let email= document.getElementbyTagName("input")[0].getAttribute("type");
-    if (email.value==='' || name.value=== null){
-        document.getElementsByClassName("message").innerHTML=('Please enter a valid email address');
+    let msg=document.getElementsByClassName("message")[0];
+
+    if (email.value===''){
+        msg.innerHTML=('Please enter a valid email address');
     }else{
-        document.getElementsByClassName("message").innerHTML= `Thank you! Your email address ${email} has been added to our mailing list.`;
+        let email= document.getElementById('email').value;
+        msg.innerHTML= `Thank you! Your email address ${email} has been added to our mailing list.`;
         console.log("Form has been submitted");
     }    
 })
+
+}
+
