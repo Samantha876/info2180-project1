@@ -32,11 +32,14 @@ header h1{
 
 header li{
     display: inline;
-    color: #6b7280;
-    transition: color .5s;
 }
 
-.header a:hover{
+header li a{
+    color: #6b7280;
+    font-weight: bold;
+}
+
+header li a:hover{
     color:#5A67D8;
 }
 
@@ -110,7 +113,6 @@ header li{
 }
 
 .testing .testing-description, btn{
-    /*display: inline;*/
     display: inline-block;
     vertical-align: middle;
 }
@@ -139,6 +141,7 @@ header li{
 .stories h2, a{
     color: #5A67D8;    
 }
+
 .stories h3{
     font-size: 18px;
 }
@@ -160,7 +163,8 @@ header li{
 
 .newsletter div{
     padding: 20px 0;
-    text-align: center;
+    justify-content: center;
+    width: 35%;
 }
 
 .newsletter .form-group,.btn{
@@ -170,13 +174,25 @@ header li{
 
 .newsletter .btn{
     background-color: #5A67D8;
+    border-radius: 5px;
+    padding:8px 20px;
+    margin-left: 10px;
+    border:none;
+}
+
+input[type=email]{
+    padding: 8px 20px;
+    border:none;
+    border-radius: 5px;
 }
 
 footer{
     background-color: #4A5568;
     color:white;
-    min-height: 60px;
+    padding:10px;
 }
+
+
 
 
 
