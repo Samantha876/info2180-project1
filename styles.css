@@ -98,39 +98,34 @@ header li a:hover{
     display: block;
 }
 
-.testing{
+.testing {
     background-color: #4A5568;
     color: white;
     min-height: 180px;
     margin: 10px;
-    padding:35px;
+    padding:10px;
 }
 
-.testing div{
+.testing .container{
+    display: flex;
+    justify-content: center;
+}
+
+.testing p{
     margin: auto;
     text-align: left;
-    align-items: center;
-}
-
-.testing .testing-description, btn{
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.cta .btn{
-    float: right;
-    background-color: #48BB78;
-    border-radius: 5px;
-    padding:12px;
+    width: 600px;
+    padding-right: 70px;
 }
 
 .testing-description{
     text-align: left;
 }
 
-.testing .cta{
+.testing .cta a{
     background-color: #48BB78;
     border-radius: 5px;
+    float:right;
 }
  
 .stories{
@@ -167,7 +162,7 @@ header li a:hover{
     width: 35%;
 }
 
-.newsletter .form-group,.btn{
+.newsletter .form-group, .btn{
     display: inline;
     padding: 5px;
 }
